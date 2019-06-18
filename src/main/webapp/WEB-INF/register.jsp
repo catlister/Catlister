@@ -19,6 +19,11 @@
                 <input id="email" name="email" class="form-control" type="text">
             </div>
             <div class="form-group">
+                <input type="radio" id="preference" name="preference" value="active">Active<br>
+                <input type="radio" name="preference" value="chill">Chill<br>
+                <input type="radio" name="preference" value="in-between">In Between<br>
+            </div>
+            <div class="form-group">
                 <label for="password">Password</label>
                 <input id="password" name="password" class="form-control" type="password">
             </div>

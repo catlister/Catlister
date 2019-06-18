@@ -1,4 +1,4 @@
-DROP DATABASE catlister_db;
+DROP DATABASE IF EXISTS catlister_db;
 
 CREATE DATABASE IF NOT EXISTS catlister_db;
 
@@ -19,16 +19,6 @@ CREATE TABLE users
     PRIMARY KEY (id)
 );
 
-CREATE TABLE categories
-(
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    ad_id INT UNSIGNED NOT NULL,
-    category VARCHAR(255) NOT NULL,
-    PRIMARY KEY (id),
-    FOREIGN KEY (ad_id) REFERENCES ads (id)
-        ON DELETE CASCADE
-);
-
 CREATE TABLE ads
 (
     id               INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -41,3 +31,15 @@ CREATE TABLE ads
     FOREIGN KEY (user_id) REFERENCES users (id)
         ON DELETE CASCADE
 );
+
+CREATE TABLE categories
+(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    ad_id INT UNSIGNED NOT NULL,
+    category VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (ad_id) REFERENCES ads (id)
+        ON DELETE CASCADE
+);
+
+
