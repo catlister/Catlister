@@ -54,5 +54,4 @@ VALUES (2, 'Atty', 'active', 'https://robohash.org/1?set=set4', 'Bacon ipsum dol
        (2,' Catty', 'active', 'https://robohash.org/8?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye');
 
 
-ALTER TABLE users
-ADD profile_image VARCHAR(255);
+

@@ -2,12 +2,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <jsp:include page="../partials/head.jsp">
+
+<jsp:include page="../partials/head.jsp">
         <jsp:param name="title" value="Update your profile."/>
     </jsp:include>
 </head>
 <body>
 <jsp:include page="../partials/navbar.jsp"/>
+
 <div class="container">
     <h1>Updated your information</h1>
     <form action="/update-profile" method="post">
@@ -42,7 +44,10 @@
             <label for="confirm_password">Confirm Update Password</label>
             <input id="confirm_password" name="confirm_password" class="form-control" type="password">
         </div>
-
+        <div class="form-group">
+            <label for="profile_image">Update Profile Image (link)</label>
+            <input id="profile_image" name="profile_image" class="form-control" type="text">
+        </div>
         <input type="hidden" name="id" value="${user.id}">
         <input type="submit" class="btn btn-primary btn-block">
     </form>
