@@ -73,4 +73,30 @@ public class MySQLAdsDao implements Ads {
         }
         return ads;
     }
+
+    @Override
+    public void updateAd(Ad ad) {
+        try {
+            String updateQuery = "UPDATE ads SET title = ?, description = ? where id = ?";
+            PreparedStatement stmt = connection.prepareStatement(updateQuery);
+            stmt.setString(1, ad.getTitle());
+            stmt.setString(2, ad.getDescription());
+            stmt.setLong(3, ad.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error creating a new ad.", e);
+        }
+    }
+
+    @Override
+    public void delete(long id) {
+        try {
+            String deleteQry = "DELETE FROM  ads WHERE  id = ?";
+            PreparedStatement stmt = connection.prepareStatement(deleteQry);
+            stmt.setLong(1, id);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error deleting a new ad.", e);
+        }
+    }
 }

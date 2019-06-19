@@ -36,7 +36,7 @@ public class MySQLUsersDao implements Users {
 
     @Override
     public Long insert(User user) {
-        String query = "INSERT INTO users(username, email, preferences, password) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO users(username, email, password, preferences) VALUES (?, ?, ?, ?)";
         try {
             PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             stmt.setString(1, user.getUsername());
@@ -53,6 +53,20 @@ public class MySQLUsersDao implements Users {
         }
     }
 
+    public void updateProfile(User user) {
+        try {
+            String updateQuery = "UPDATE users SET username = ?, email = ?, password = ?, preferences = ? where id = ?";
+            PreparedStatement stmt = connection.prepareStatement(updateQuery);
+            stmt.setString(1, user.getUsername());
+            stmt.setString(2, user.getEmail());
+            stmt.setString(3, user.getPassword());
+            stmt.setString(4, user.getPreferences());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error updating profile.", e);
+        }
+    }
+
     private User extractUser(ResultSet rs) throws SQLException {
         if (!rs.next()) {
             return null;
@@ -65,4 +79,5 @@ public class MySQLUsersDao implements Users {
                 rs.getString("password")
                 );
     }
+
 }
