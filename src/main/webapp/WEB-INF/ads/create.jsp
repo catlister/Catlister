@@ -18,6 +18,12 @@
                 <input type="text" id="image-link" name="image-link" class="form-control" placeholder="">
             </div>
             <div class="form-group">
+                <p><b>Choose Cat Personality Type</b></p>
+                <input type="radio" name="personality_type" value="active"> Active<br>
+                <input type="radio" name="personality_type" value="chill"> Chill<br>
+                <input type="radio" name="personality_type" value="zoomies"> Zoomies<br>
+            </div>
+            <div class="form-group">
                 <label for="description">Description</label>
                 <textarea id="description" name="description" class="form-control" type="text"></textarea>
             </div>
