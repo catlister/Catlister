@@ -12,13 +12,10 @@
 
 <div class="container">
     <h1>Amazing Cats!</h1>
-
-
     <section>
         <div class="card-container">
             <c:forEach var="ad" items="${ads}">
                 <div class="card">
-                        <%--  <img src="https://robohash.org/3?set=set4"/>--%>
                     <img src="${ad.images}"/>
                     <div class="content">
                         <h3>${ad.title}</h3>
@@ -29,6 +26,5 @@
         </div>
     </section>
 </div>
-
 </body>
 </html>

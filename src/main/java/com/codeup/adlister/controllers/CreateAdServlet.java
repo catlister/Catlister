@@ -14,16 +14,16 @@ import java.io.IOException;
 public class CreateAdServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/WEB-INF/ads/create.jsp")
-            .forward(request, response);
+                .forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        Ad ad = new Ad(
-            1, // for now we'll hardcode the user id
-            request.getParameter("title"),
-            request.getParameter("images"),
-            request.getParameter("description")
-        );
+        String title = request.getParameter("title");
+        String personality_type = request.getParameter("personality_type");
+        String images = request.getParameter("image-link");
+        String description = request.getParameter("description");
+
+        Ad ad = new Ad(2, title, personality_type, images, description);
         DaoFactory.getAdsDao().insert(ad);
         response.sendRedirect("/ads");
     }
