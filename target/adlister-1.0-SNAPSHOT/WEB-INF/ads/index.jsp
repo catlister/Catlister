@@ -3,21 +3,31 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Viewing All The Ads" />
+        <jsp:param name="title" value="Viewing All The Ads"/>
     </jsp:include>
+    <link rel="stylesheet" href="/css/cards.css">
 </head>
 <body>
-<jsp:include page="/WEB-INF/partials/navbar.jsp" />
+<jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
 <div class="container">
-    <h1>Here Are all the ads!</h1>
+    <h1>Amazing Cats!</h1>
 
-    <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
-            <h2>${ad.title}</h2>
-            <p>${ad.description}</p>
+
+    <section>
+        <div class="card-container">
+            <c:forEach var="ad" items="${ads}">
+                <div class="card">
+                        <%--  <img src="https://robohash.org/3?set=set4"/>--%>
+                    <img src="${ad.images}"/>
+                    <div class="content">
+                        <h3>${ad.title}</h3>
+                        <p>${ad.description}</p>
+                    </div>
+                </div>
+            </c:forEach>
         </div>
-    </c:forEach>
+    </section>
 </div>
 
 </body>
