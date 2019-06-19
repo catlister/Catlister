@@ -6,6 +6,7 @@ public class User {
     private String email;
     private String preferences;
     private String password;
+    private String updated;
 
     public User() {
     }
@@ -16,7 +17,6 @@ public class User {
         this.preferences = preferences;
         this.password = password;
     }
-
 
     public User(long id, String username, String email, String preferences, String password) {
         this.id = id;
