@@ -44,6 +44,7 @@ public class MySQLUsersDao implements Users {
             stmt.setString(3, user.getPreferences());
             stmt.setString(4, user.getPassword());
 
+
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
             rs.next();
@@ -64,6 +65,27 @@ public class MySQLUsersDao implements Users {
             stmt.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException("Error updating profile.", e);
+        }
+    }
+
+    @Override
+    public Long insertImage(User user) {
+        String query = "INSERT INTO users(username, email, password, preferences, profile_image) VALUES (?, ?, ?, ?, ?)";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, user.getUsername());
+            stmt.setString(2, user.getEmail());
+            stmt.setString(3, user.getPreferences());
+            stmt.setString(4, user.getPassword());
+            stmt.setString(5, user.getProfile_image());
+
+
+            stmt.executeUpdate();
+            ResultSet rs = stmt.getGeneratedKeys();
+            rs.next();
+            return rs.getLong(1);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error creating new user", e);
         }
     }
 
