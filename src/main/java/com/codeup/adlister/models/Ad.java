@@ -4,22 +4,25 @@ public class Ad {
     private long id;
     private long userId;
     private String title;
+    private String personality_type;
     private String images;
     private String description;
 
-    public Ad(long id, long userId, String title, String images, String description) {
+
+    public Ad(long id, long userId, String title, String personality_type, String images, String description) {
         this.id = id;
         this.userId = userId;
         this.title = title;
+        this.personality_type = personality_type;
         this.images = images;
         this.description = description;
     }
 
 
-
-    public Ad(long userId, String title, String images, String description) {
+    public Ad(long userId, String title, String personality_type, String images, String description) {
         this.userId = userId;
         this.title = title;
+        this.personality_type = personality_type;
         this.images = images;
         this.description = description;
     }
@@ -30,6 +33,14 @@ public class Ad {
 
     public void setImages(String images) {
         this.images = images;
+    }
+
+    public String getPersonality_type() {
+        return personality_type;
+    }
+
+    public void setPersonality_type(String personality_type) {
+        this.personality_type = personality_type;
     }
 
     public long getId() {
