@@ -39,7 +39,7 @@ public class RegisterServlet extends HttpServlet {
         String hashedPW = BCrypt.hashpw(password, BCrypt.gensalt());
 
         // create and save a new user
-        User user = new User(username, email, preference, hashedPW);
+        User user = new User(username, email, hashedPW, preference);
         DaoFactory.getUsersDao().insert(user);
         response.sendRedirect("/login");
     }
