@@ -14,9 +14,19 @@ import java.io.IOException;
 @WebServlet(name = "UpdateProfileServlet", urlPatterns = "/update-profile")
 public class UpdateProfileServlet extends HttpServlet {
 
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/profile");
+        String userID = request.getParameter("user-id");
+        String username = request.getParameter("username");
+        String profile_image = request.getParameter("image_profile");
+        String email = request.getParameter("email");
+        String preference = request.getParameter("preference");
+
+        // Parse ID
+        long id = Integer.parseInt(userID);
+
+        User user = new User(id, username, email, profile_image, preference);
+        DaoFactory.getUsersDao().updateProfile(user);
+        response.sendRedirect("/profile");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

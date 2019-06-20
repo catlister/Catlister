@@ -21,7 +21,6 @@ public class MySQLUsersDao implements Users {
         }
     }
 
-
     @Override
     public User findByUsername(String username) {
         String query = "SELECT * FROM users WHERE username = ? LIMIT 1";
@@ -56,12 +55,13 @@ public class MySQLUsersDao implements Users {
 
     public void updateProfile(User user) {
         try {
-            String updateQuery = "UPDATE users SET username = ?, email = ?, password = ?, preferences = ? where id = ?";
+            String updateQuery = "UPDATE users SET username = ?, email = ?, profile_image = ? where id = ?";
             PreparedStatement stmt = connection.prepareStatement(updateQuery);
             stmt.setString(1, user.getUsername());
             stmt.setString(2, user.getEmail());
-            stmt.setString(3, user.getPassword());
-            stmt.setString(4, user.getPreferences());
+            stmt.setString(3, user.getProfile_image());
+            stmt.setLong(4, user.getId());
+
             stmt.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException("Error updating profile.", e);
