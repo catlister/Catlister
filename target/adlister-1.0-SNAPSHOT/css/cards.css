@@ -8,7 +8,7 @@
 .card-container:hover .card {
     opacity: .7;
     cursor: pointer;
-    filter: grayscale(1);
+    /*filter: grayscale(1);*/
 }
 .card-container .card {
     margin: 10px;

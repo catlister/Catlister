@@ -15,11 +15,14 @@
     <section>
         <div class="card-container">
             <c:forEach var="ad" items="${ads}">
-                <div class="card">
+                <div class="card text-center">
                     <img src="${ad.images}"/>
                     <div class="content">
                         <h3>${ad.title}</h3>
                         <p>${ad.description}</p>
+                        <br>
+                        <a href="#" class="btn btn-danger">Adopt me!</a>
+                        <br>
                     </div>
                 </div>
             </c:forEach>
