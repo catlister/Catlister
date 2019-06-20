@@ -55,12 +55,13 @@ public class MySQLUsersDao implements Users {
 
     public void updateProfile(User user) {
         try {
-            String updateQuery = "UPDATE users SET username = ?, email = ?, profile_image = ? where id = ?";
+            String updateQuery = "UPDATE users SET username = ?, email = ?, preferences = ?, profile_image = ? where id = ?";
             PreparedStatement stmt = connection.prepareStatement(updateQuery);
             stmt.setString(1, user.getUsername());
             stmt.setString(2, user.getEmail());
-            stmt.setString(3, user.getProfile_image());
-            stmt.setLong(4, user.getId());
+            stmt.setString(3, user.getPreferences());
+            stmt.setString(4, user.getProfile_image());
+            stmt.setLong(5, user.getId());
 
             stmt.executeUpdate();
         } catch (SQLException e) {

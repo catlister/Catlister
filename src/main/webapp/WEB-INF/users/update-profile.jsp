@@ -26,14 +26,14 @@
 
         <div class="form-group">
             <label for="email">Update Profile URL</label>
-            <input id="profile_image" name="profile_image" class="form-control" type="text" value="http://www.img/img.jpg">
+            <input id="profile_image" name="profile_image" class="form-control" type="text" placeholder="http://www.img/img.jpg">
         </div>
 
-<%--        <div class="form-group">--%>
-<%--            <input type="radio" name="preference" value="active">Active<br>--%>
-<%--            <input type="radio" name="preference" value="chill">Chill<br>--%>
-<%--            <input type="radio" name="preference" value="in-between">In Between<br>--%>
-<%--        </div>--%>
+        <div class="form-group">
+            <input type="radio" name="preference" value="active">Active<br>
+            <input type="radio" name="preference" value="chill">Chill<br>
+            <input type="radio" name="preference" value="in-between">In Between<br>
+        </div>
 
         <input type="hidden" name="user-id" value="${user.id}">
         <input type="submit" class="btn btn-primary btn-block">

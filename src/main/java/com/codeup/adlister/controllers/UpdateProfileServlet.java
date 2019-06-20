@@ -17,14 +17,14 @@ public class UpdateProfileServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userID = request.getParameter("user-id");
         String username = request.getParameter("username");
-        String profile_image = request.getParameter("image_profile");
+        String profile_image = request.getParameter("profile_image");
         String email = request.getParameter("email");
         String preference = request.getParameter("preference");
 
         // Parse ID
         long id = Integer.parseInt(userID);
 
-        User user = new User(id, username, email, profile_image, preference);
+        User user = new User(id, username, email, preference, profile_image);
         DaoFactory.getUsersDao().updateProfile(user);
         response.sendRedirect("/profile");
     }
