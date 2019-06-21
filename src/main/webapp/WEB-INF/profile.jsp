@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -34,5 +35,22 @@
 <%--            </div>--%>
         </section>
     </div>
+
+<%--        <section>--%>
+<%--            <div class="card-container">--%>
+<%--                <c:forEach var="ad" items="${ads}">--%>
+<%--                    <div class="card text-center">--%>
+<%--                        <img src="${ad.images}"/>--%>
+<%--                        <div class="content">--%>
+<%--                            <h3>${ad.title}</h3>--%>
+<%--                            <p>${ad.description}</p>--%>
+<%--                            <br>--%>
+<%--                            <a href="#" class="btn btn-danger">Adopt me!</a>--%>
+<%--                            <br>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </c:forEach>--%>
+<%--            </div>--%>
+<%--        </section>--%>
 </body>
 </html>
