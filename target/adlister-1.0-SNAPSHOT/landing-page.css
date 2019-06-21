@@ -1,0 +1,9 @@
+.splash-page {
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cat-image {
+    background-image: url("./img/fishing.jpg");
+}
