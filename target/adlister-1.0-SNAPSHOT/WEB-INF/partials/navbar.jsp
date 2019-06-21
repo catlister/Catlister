@@ -1,16 +1,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/ads">Catlister</a>
-        </div>
-
+<nav class="top_nav_container">
+    <div class="container">
         <c:if test="${user.username == null}">
         <ul id = "default" class="nav navbar-nav navbar-right default">
             <!-- logged out USER nav bar -->
-            <li><a href="/ads">View All</a></li>
+            <li><a href="/ads">View Cats</a></li>
             <li><a href="/login">Login</a></li>
         </ul>
         </c:if>
