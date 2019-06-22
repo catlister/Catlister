@@ -17,9 +17,6 @@
 <div class="row">
     <div class="nr_landing nr_section_shadow_bottom">
         <div class="container cat_login-cat">
-            <div class="eight columns">
-                <img src="img/login-img.png" alt="cat supreme image">
-            </div>
             <div class="four columns cat_login">
                 <div class="container">
                     <h1>Log In</h1>
@@ -35,6 +32,9 @@
                         <input type="submit" class="nr_main_buttons" value="Log In">
                     </form>
                 </div>
+            </div>
+            <div class="eight columns">
+                <img src="img/login-img.png" alt="cat supreme image">
             </div>
         </div>
     </div>
