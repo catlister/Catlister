@@ -4,36 +4,35 @@ public class User {
     private long id;
     private String username;
     private String email;
-    private String preferences;
     private String password;
-    private String updated;
+    private String preferences;
     private String profile_image;
 
-    public User(long id, String username, String email, String preferences, String password, String profile_image) {
+    public User(long id, String username, String email, String password, String preferences, String profile_image) {
         this.id = id;
         this.username = username;
         this.email = email;
-        this.preferences = preferences;
         this.password = password;
+        this.preferences = preferences;
         this.profile_image = profile_image;
     }
 
     public User() {
     }
 
-    public User(String username, String email, String preferences, String password) {
+    public User(String username, String email, String password, String preferences) {
         this.username = username;
         this.email = email;
-        this.preferences = preferences;
         this.password = password;
+        this.preferences = preferences;
     }
 
-    public User(long id, String username, String email, String preferences, String password) {
+    public User(long id, String username, String email, String password, String preferences) {
         this.id = id;
         this.username = username;
         this.email = email;
-        this.preferences = preferences;
         this.password = password;
+        this.preferences = preferences;
     }
 
     public long getId() {

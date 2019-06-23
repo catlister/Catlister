@@ -22,7 +22,7 @@
                     <img src="img/login-img.png" alt="cat supreme image">
                 </div>
 
-                <div class="four columns">
+                <div class="four columns cat_login">
                     <div class="container">
                         <h1>Log In</h1>
                         <form action="/login" method="POST">

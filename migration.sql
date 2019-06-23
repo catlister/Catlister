@@ -44,14 +44,15 @@ CREATE TABLE categories
 
 
 -- Add Seeder
+USE catlister_db;
 
 INSERT INTO ads (user_id, title, personality_type, images, description)
-VALUES (2, 'Atty', 'active', 'https://robohash.org/1?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
-       (2, 'Batty', 'chill', 'https://robohash.org/3?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
-       (2, 'Catty', 'zoomies', 'https://robohash.org/4?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
-       (2, 'Datty', 'chill', 'https://robohash.org/6?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
-       (2, 'Fatty', 'chill', 'https://robohash.org/7?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
-       (2,' Catty', 'active', 'https://robohash.org/8?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye');
+VALUES (26, 'Hatty', 'active', 'https://robohash.org/77?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
+       (26, 'Jatty', 'chill', 'https://robohash.org/33?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
+       (26, 'Matty', 'zoomies', 'https://robohash.org/44?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
+       (26, 'Natty', 'chill', 'https://robohash.org/66?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
+       (26, 'Tatty', 'chill', 'https://robohash.org/78?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye'),
+       (26,' Satty', 'active', 'https://robohash.org/88?set=set4', 'Bacon ipsum dolor amet venison landjaeger ribeye');
 
 
 

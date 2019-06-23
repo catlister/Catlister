@@ -410,10 +410,9 @@ p:first-child:first-letter {
 
 /*FOOTER AREA*/
 footer {
-    height:50px;
+    height: 50px;
     width: 100%;
 }
-
 
 
 /*MEDIA QUERIES*/
@@ -423,10 +422,12 @@ footer {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+}
 
 @media screen and (max-width: 600px) {
     /* Place the timelime to the left */
@@ -461,25 +462,191 @@ footer {
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
-
-
+@media (min-width: 1200px) {
+}
 
 
 /* CAT LISTER CLASSES */
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Admin tables and dashboard*/
+.admin-dashboard {
+    padding-top: 5%;
+}
+
+.admin-card {
+    border-radius: 5px;
+}
+
+.table-form {
+    padding-top: 2%;
+}
+
+.admin-card img {
+    height: 100%;
+    width: 100%;
+}
+
+.admin-card {
+    height: 100px;
+    width: auto;
+}
+
+.table-delete,
+.table-update {
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.table-delete:hover {
+    color: #FFFFFF;
+    background-color: lightcoral;
+}
+
+.table-update:hover {
+    color: #FFFFFF;
+    background-color: #4FC3A1;
+}
+
+
+.table-wrapper {
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+
+    .table-wrapper:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+
+    .fl-table thead th:last-child {
+        border-bottom: none;
+    }
+
+    .fl-table thead {
+        float: left;
+    }
+
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    .fl-table td, .fl-table th {
+        padding: 10px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* Landing */
 
 .landing_message {
     padding-top: 20%;
 }
+
 .landing_image img {
-    padding-top:10%;
+    padding-top: 10%;
     height: 100%;
     width: 100%;
 }
@@ -488,6 +655,7 @@ footer {
     background-color: #EAF0FE;
     padding-top: 3%;
 }
+
 .cat_find img {
     height: 100%;
     width: 100%;
@@ -515,6 +683,8 @@ footer {
 .cat_science {
     height: 65%;
 }
+
+
 
 
 

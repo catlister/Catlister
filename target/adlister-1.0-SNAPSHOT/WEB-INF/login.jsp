@@ -15,7 +15,6 @@
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-    <div class="cat_login-cat-bck">
     <div class="row">
         <div class="nr_landing nr_section_shadow_bottom">
             <div class="container cat_login-cat">
@@ -23,7 +22,7 @@
                     <img src="img/login-img.png" alt="cat supreme image">
                 </div>
 
-                <div class="four columns">
+                <div class="four columns cat_login">
                     <div class="container">
                         <h1>Log In</h1>
                         <form action="/login" method="POST">
@@ -41,7 +40,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 </html>
