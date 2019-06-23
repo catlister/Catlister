@@ -9,8 +9,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="container">
     <section>
-        <div class="card-container">
-            <div class="card text-center">
+        <div class=".nr_cards">
+            <div class=".nr_cards">
                 <img src="https://i.pinimg.com/736x/4a/be/d0/4abed082f43ef08ce5082d0820bc21c7.jpg"/>
                 <div class="content">
                     <h1>Welcome, ${sessionScope.user.username}!</h1>
@@ -18,7 +18,7 @@
                     <p><b>Email:</b> ${sessionScope.user.email}</p>
                     <p><b>Cat Preference:</b> ${sessionScope.user.preferences}</p>
                     <br>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="/update-profile" class=".nr_secondary_buttons">Update Profile</a>
                 </div>
             </div>
 
