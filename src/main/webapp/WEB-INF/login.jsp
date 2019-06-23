@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 <div class="row">
     <div class="nr_landing nr_section_shadow_bottom">

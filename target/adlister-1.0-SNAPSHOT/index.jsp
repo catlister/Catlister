@@ -43,8 +43,7 @@
             <div class="six columns">
                 <h4>We use science to find your perfect match!</h4>
                 <p><b>CATalist</b> is the first service within the online dating industry to use a scientific approach
-                    to
-                    matching highly compatible cats and hoomans. Catalist's matching is based on using our proprietary AI
+                    to matching highly compatible cats and hoomans. Catalist's matching is based on using our proprietary AI
                     to match cat-couples based on features of compatibility found in thousands of successful cat-to-human
                     relationships.</p>
             </div>

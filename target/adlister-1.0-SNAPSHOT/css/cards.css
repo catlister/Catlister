@@ -19,6 +19,7 @@
     -webkit-transition: .3s all ease;
     transition: .15s all ease;
 }
+
 .card-container .card:hover {
     box-shadow: 0 0 8px 3px rgba(0,0,0,.15);
     transform: scale(1.025);
@@ -45,4 +46,12 @@
     padding: 0;
     margin: 0;
     font: 400 1.6rem/2.2rem 'Open Sans script=all', sans-serif;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.admin-card img {
+    border-radius: 50%;
 }

@@ -2,12 +2,19 @@
     width: 100%;
     height: 80%;
 }
+
+
+.cat_login-cat-bck {
+    background-image: url("/img/login-img.png");
+}
+
 .nr_landing {
     padding-top: 10%;
     height: 100vh;
     width: 100vw;
     background-color: #F8FAF7;
 }
+
 .cat_login {
     padding-top: 10%;
 }
