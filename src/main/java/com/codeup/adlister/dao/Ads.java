@@ -5,9 +5,8 @@ import com.codeup.adlister.models.Ad;
 import java.util.List;
 
 public interface Ads {
-    // get a list of all the ads
     List<Ad> all();
-    // insert a new ad and return the new ad's id
+    List<Ad> matchUserPref(String personality);
     Long insert(Ad ad);
     void updateAd(Ad ad);
     void delete(long id);

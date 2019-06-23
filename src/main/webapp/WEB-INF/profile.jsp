@@ -36,21 +36,30 @@
         </section>
     </div>
 
-<%--        <section>--%>
-<%--            <div class="card-container">--%>
-<%--                <c:forEach var="ad" items="${ads}">--%>
-<%--                    <div class="card text-center">--%>
-<%--                        <img src="${ad.images}"/>--%>
-<%--                        <div class="content">--%>
-<%--                            <h3>${ad.title}</h3>--%>
-<%--                            <p>${ad.description}</p>--%>
-<%--                            <br>--%>
-<%--                            <a href="#" class="btn btn-danger">Adopt me!</a>--%>
-<%--                            <br>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </c:forEach>--%>
-<%--            </div>--%>
-<%--        </section>--%>
+<%--     Show Matches --%>
+
+    <div class="container">
+        <form action="/profile" method="post">
+            <jsp:include page="/WEB-INF/partials/user-information.jsp" />
+            <button type="submit" >Get my match</button>
+        </form>
+        <h1>Your matched Cats!</h1>
+        <section>
+            <div class="card-container">
+                <c:forEach var="ad" items="${ads}">
+                    <div class="card text-center">
+                        <img src="${ad.images}"/>
+                        <div class="content">
+                            <h3>${ad.title}</h3>
+                            <p>${ad.description}</p>
+                            <br>
+                            <a href="#" class="btn btn-danger">Adopt me!</a>
+                            <br>
+                        </div>
+                    </div>
+                </c:forEach>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
