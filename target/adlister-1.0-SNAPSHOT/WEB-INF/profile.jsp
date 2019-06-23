@@ -36,7 +36,14 @@
         </section>
     </div>
 
+<%--     Show Matches --%>
+
     <div class="container">
+        <form action="/profile" method="post">
+            <jsp:include page="/WEB-INF/partials/user-information.jsp" />
+            <button type="submit" >Get my match</button>
+        </form>
+        <h1>Your matched Cats!</h1>
         <section>
             <div class="card-container">
                 <c:forEach var="ad" items="${ads}">

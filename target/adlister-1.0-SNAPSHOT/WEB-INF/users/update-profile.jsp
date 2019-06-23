@@ -3,7 +3,7 @@
 <html>
 <head>
 
-<jsp:include page="../partials/head.jsp">
+    <jsp:include page="../partials/head.jsp">
         <jsp:param name="title" value="Update your profile."/>
     </jsp:include>
 </head>
@@ -32,7 +32,7 @@
         <div class="form-group">
             <input type="radio" name="preference" value="active">Active<br>
             <input type="radio" name="preference" value="chill">Chill<br>
-            <input type="radio" name="preference" value="in-between">In Between<br>
+            <input type="radio" name="preference" value="zoomies">Zoomies<br>
         </div>
 
         <input type="hidden" name="user-id" value="${user.id}">
