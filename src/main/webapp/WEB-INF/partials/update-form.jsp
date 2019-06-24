@@ -1,19 +1,14 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: nadiabotello
+  Date: 2019-06-24
+  Time: 15:07
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-
-    <jsp:include page="../partials/head.jsp">
-        <jsp:param name="title" value="Update your profile."/>
-    </jsp:include>
-</head>
-<body>
-<jsp:include page="../partials/navbar.jsp"/>
-
-<%--<jsp:include page="../partials/update-form.jsp"/>--%>
-
 <div class="container">
-<%--    <h1>Updated your information</h1>--%>
+<%--    <h1>Update your info</h1>--%>
     <form action="/update-profile" method="post">
 
         <div class="form-group">
@@ -41,5 +36,3 @@
         <input type="submit" class="btn btn-primary btn-block">
     </form>
 </div>
-</body>
-</html>

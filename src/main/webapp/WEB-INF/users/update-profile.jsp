@@ -10,8 +10,10 @@
 <body>
 <jsp:include page="../partials/navbar.jsp"/>
 
+<%--<jsp:include page="../partials/update-form.jsp"/>--%>
+
 <div class="container">
-    <h1>Updated your information</h1>
+<%--    <h1>Updated your information</h1>--%>
     <form action="/update-profile" method="post">
 
         <div class="form-group">
