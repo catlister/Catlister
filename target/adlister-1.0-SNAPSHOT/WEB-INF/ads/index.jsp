@@ -18,14 +18,16 @@
 <div class="container all_cat_view">
     <h3>Find your match today!</h3>
     <c:forEach var="ad" items="${ads}">
-        <div class="cat_card_container">
+        <div class="cat_card_container animated fadeInLeft">
             <div class="cat_card_img_container">
                 <img src="${ad.images}" alt="Cat Image">
             </div>
             <div class="cat_card_information">
                 <h5 class="cat_name">${ad.title}</h5>
                 <p class="cat_description">${ad.description}</p>
+                <form action="/profile">
                 <button class="nr_main_buttons" type="submit">Adopt</button>
+                </form>
             </div>
         </div>
     </c:forEach>
