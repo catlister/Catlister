@@ -21,12 +21,14 @@ public class AdsDeleteServlet extends HttpServlet {
         if (loggedIn == null) {
             resp.sendRedirect("/login");
             return;
+        }   else if(loggedIn != "administrator") {
+            resp.sendRedirect("/profile");
+            return;
         }
 
         req.setAttribute("ads", DaoFactory.getAdsDao().all());
         req.setAttribute("users", DaoFactory.getUsersDao().allUsers());
         req.getRequestDispatcher("/WEB-INF/users/dashboard.jsp").forward(req, resp);
-
     }
 
     @Override

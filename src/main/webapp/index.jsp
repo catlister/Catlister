@@ -3,7 +3,7 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="CATalist: The best cat + human dating website!"/>
+        <jsp:param name="title" value="CATalist: The best cat + hooman adoption website!"/>
     </jsp:include>
     <link rel="stylesheet" href="landing-page.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro:400,700,900">
