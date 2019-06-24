@@ -27,6 +27,11 @@ public class UpdateProfileServlet extends HttpServlet {
         User user = new User(id, username, email, preference, profile_image);
         DaoFactory.getUsersDao().updateProfile(user);
         response.sendRedirect("/profile");
+
+//        request.getSession().removeAttribute("user");
+//        request.getSession().invalidate();
+//        request.getRequestDispatcher("/login").forward(request, response);
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
