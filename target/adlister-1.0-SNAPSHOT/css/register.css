@@ -1,0 +1,25 @@
+.register-section {
+    padding-top: 10%;
+}
+
+.login-form-container {
+    background-color: #F8F8FF;
+    border: 1px solid #DCDCDD;
+    width: available;
+    -webkit-box-shadow: -1px 13px 12px -14px rgba(57, 66, 78, 0.35);
+    -moz-box-shadow: -1px 13px 12px -14px rgba(57, 66, 78, 0.35);
+    box-shadow: -1px 13px 12px -14px rgba(57, 66, 78, 0.35);
+    text-align: center;
+}
+
+.right-side-form {
+    background-color: rgba(254, 244, 241, 0.30);
+    padding-top: 12px;
+    padding-left: 21px;
+}
+
+
+.left-side-form img {
+    height: auto;
+    width: 100%;
+}

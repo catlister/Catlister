@@ -15,6 +15,10 @@
     box-shadow: -1px 13px 12px -14px rgba(57, 66, 78, 0.35);
 }
 
+/*.left-side-form {*/
+/*    display: inline-block;*/
+/*}*/
+
 .cat_card_img_container img {
     height: 150px;
     width: auto;
