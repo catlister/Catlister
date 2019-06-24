@@ -33,10 +33,10 @@
                         </div>
                         <div class="form-group">
                             <label for="select-preference">Personality Type</label>
-                            <select name="" id="select-preference">
-                                <option name="preference" value="active">Active<br>
-                                <option name="preference" value="chill">Chill<br>
-                                <option name="preference" value="zoomies">Zoomies<br>
+                            <select name="preference" id="select-preference">
+                                <option value="active">Active<br>
+                                <option value="chill">Chill<br>
+                                <option value="zoomies">Zoomies<br>
                             </select>
                         </div>
                         <div class="form-group">
