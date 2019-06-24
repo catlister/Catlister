@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="eight columns">
-                <img src="img/login-img.png" alt="cat supreme image">
+                <img src="/img/login_img.png" alt="cat supreme image">
             </div>
         </div>
     </div>

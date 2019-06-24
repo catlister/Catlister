@@ -3,7 +3,7 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Cat-alyst: The best cat + human dating website!"/>
+        <jsp:param name="title" value="CATalist: The best cat + human dating website!"/>
     </jsp:include>
     <link rel="stylesheet" href="landing-page.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro:400,700,900">
@@ -22,7 +22,7 @@
             <div class="four columns landing_message">
                 <h4>Still fishing for the perfect one?</h4>
                 <h6>CATalist is here to help</h6>
-                <button class="nr_main_buttons">Join today!</button>
+                <button class="nr_main_buttons"><a href="/register">Join today!</a></button>
             </div>
 
             <div class="eight columns landing_image">
@@ -42,10 +42,9 @@
             </div>
             <div class="six columns">
                 <h4>We use science to find your perfect match!</h4>
-                <p><b>CATalist</b> is the first service within the online dating industry to use a scientific approach
+                <p><b>CATalist</b> is the first service within the online pet adoption to use a scientific approach
                     to matching highly compatible cats and hoomans. Catalist's matching is based on using our proprietary AI
-                    to match cat-couples based on features of compatibility found in thousands of successful cat-to-human
-                    relationships.</p>
+                    to match cats and humans based on features of compatibility found in thousands of successful adoptions</p>
             </div>
         </div>
     </div>

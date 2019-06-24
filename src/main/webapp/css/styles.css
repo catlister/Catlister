@@ -685,6 +685,19 @@ footer {
 }
 
 
+.cat_nav_right {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.all_cat_view {
+    padding-top: 6%;
+}
+
+
 
 
 

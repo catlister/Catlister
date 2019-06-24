@@ -41,9 +41,9 @@
     <div class="container">
         <form action="/profile" method="post">
             <jsp:include page="/WEB-INF/partials/user-information.jsp" />
-            <button type="submit" >Get my match</button>
+            <button type="submit" >Get my matches</button>
         </form>
-        <h1>Your matched Cats!</h1>
+        <h3>Your matched Cats!</h3>
         <section>
             <div class="card-container">
                 <c:forEach var="ad" items="${ads}">
