@@ -123,5 +123,4 @@ public class MySQLUsersDao implements Users {
         }
         return users;
     }
-
 }
