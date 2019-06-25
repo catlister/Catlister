@@ -8,7 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="container">
-<%--    <h1>Update your info</h1>--%>
+    <%--    <h1>Update your info</h1>--%>
     <form action="/update-profile" method="post">
 
         <div class="form-group">
@@ -22,14 +22,19 @@
         </div>
 
         <div class="form-group">
-            <label for="email">Update Profile URL</label>
-            <input id="profile_image" name="profile_image" class="form-control" type="text" placeholder="http://www.img/img.jpg">
+            <label for="email">Update Profile Image</label>
+            <input id="profile_image" name="profile_image" class="form-control" type="text"
+                   placeholder="http://www.img/img.jpg">
         </div>
 
         <div class="form-group">
-            <input type="radio" name="preference" value="active">Active<br>
-            <input type="radio" name="preference" value="chill">Chill<br>
-            <input type="radio" name="preference" value="zoomies">Zoomies<br>
+            <label for="user-pref"></label>
+            <select name="preference" id="user-pref">
+                <option value="active">Active</option>
+                <option value="chill">Chill</option>
+                <option value="zoomies">Zoomies</option>
+            </select>
+
         </div>
 
         <input type="hidden" name="user-id" value="${user.id}">
