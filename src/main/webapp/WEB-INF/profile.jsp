@@ -49,7 +49,7 @@
         <!-- Show Profile Card -->
         <div class="four columns">
             <section class="user-profile-wrapper">
-                <div class="">
+                <div>
                     <div class="profile-card">
                         <h6>Welcome, ${sessionScope.user.username}!</h6>
                         <div class="user_img_container">

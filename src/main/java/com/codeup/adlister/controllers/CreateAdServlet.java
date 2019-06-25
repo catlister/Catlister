@@ -23,7 +23,7 @@ public class CreateAdServlet extends HttpServlet {
         String images = request.getParameter("image-link");
         String description = request.getParameter("description");
 
-        Ad ad = new Ad(2, title, personality_type, images, description);
+        Ad ad = new Ad(27, title, personality_type, images, description);
         DaoFactory.getAdsDao().insert(ad);
         response.sendRedirect("/ads");
     }

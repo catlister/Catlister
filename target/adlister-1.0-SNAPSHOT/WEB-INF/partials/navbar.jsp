@@ -6,6 +6,7 @@
             <!-- logged out USER nav bar -->
             <li><a href="/">Home</a></li>ss
             <li><a href="/ads">Adopt</a></li>
+            <li><a href="/register">Register</a></li>
             <li class="cat_nav_right"><a href="/login">Login</a></li>
         </ul>
         </c:if>
@@ -15,8 +16,7 @@
             <!-- logged in USER nav bar -->
             <li><a href="/">Home</a></li>
             <li><a href="/ads">Adopt</a></li>
-            <li><a href="/update-profile">Update Profile</a></li>
-            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/profile">Profile</a></li>
             <li class="cat_nav_right"><a href="/logout">Logout</a></li>
         </ul>
         </c:if>
