@@ -1,5 +1,5 @@
 .profile-card {
-    margin-top: 25%;
+    margin-top: 30%;
     /*height: 50%;*/
     /*width: 100%;*/
 }
@@ -27,7 +27,7 @@
     color: #FFF;
     border: 1px solid #DCDCDD;
     height: 50px;
-    width: auto;
+    width: 100%;
     font-size: 1.1em;
     background-color: #59C9A5;
 }
@@ -43,17 +43,4 @@
     width: auto;
     font-size: 1.1em;
     background-color: #59C9A5;
-}
-
-.nr_cards {
-    height: auto;
-    width: auto;
-    padding: 15px;
-    background-color: #FFF;
-    border: 1px solid #DCDCDD;
-    margin-bottom: 9px;
-    border-radius: 2px;
-    box-shadow: -3px 3px 18px 0px rgba(75, 73, 76, 0.29);
-    -moz-box-shadow: -3px 3px 18px 0px rgba(75, 73, 76, 0.29);
-    -webkit-box-shadow: -3px 3px 18px 0px rgba(75, 73, 76, 0.29);
 }

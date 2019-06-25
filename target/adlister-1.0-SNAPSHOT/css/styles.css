@@ -108,6 +108,7 @@ input {
 }
 
 .nr_secondary_buttons {
+    padding: 3px;
     color: #FFF;
     border: 1px solid #DCDCDD;
     height: 50px;
@@ -215,8 +216,8 @@ p:first-child:first-letter {
 
 /* BLOG CARDS */
 .nr_blog_cards {
-    height: auto;
-    width: auto;
+    height: 30%;
+    width: 100%;
     background-color: #FFF;
     border: 1px solid #DCDCDD;
     margin-bottom: 9px;
@@ -247,7 +248,7 @@ p:first-child:first-letter {
 
 .nr_blog_img {
     padding: 5px;
-    height: 100%;
+    height: 30%;
     width: 100%;
     object-fit: contain;
 }
