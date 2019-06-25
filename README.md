@@ -14,22 +14,22 @@ Register as a new user, choose your personality type, log in, view your cat matc
 
 ## Features
 
-Registration
-User Login/Profile Update
-Admin Dashboard 
-Admin Create, Update & Delete Functionality
-Cat Index Page
-Profile View
-Dynamic NavBar
-Dynamic Landing Page
-MySQL Data Persistence
+* Registration
+* User Login/Profile Update
+* Admin Dashboard 
+* Admin Create, Update & Delete Functionality
+* Cat Index Page
+* Profile View
+* Dynamic NavBar
+* Dynamic Landing Page
+* MySQL Data Persistence
 
 ## Work-in-Progress Features
 
-Functional Adopt Button
-Fix Update Profile Function for Preferences
-Style Create Page
-Locking down the Dashboard
+* Functional Adopt Button
+* Fix Update Profile Function for Preferences
+* Style Create Page
+* Locking down the Dashboard
 
 
 ## Built With
