@@ -1,6 +1,6 @@
 # CATalist
 
-![CATalist Logo](./main/webapp/img/logo.png)
+![CATalist Logo](src/main/webapp/img/logo.png)
 
 We use science to find your perfect match!
 
