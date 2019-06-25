@@ -7,28 +7,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Create a new Ad</h1>
-        <form action="/ads/create" method="post">
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input id="title" name="title" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-                <label for="image-link">Image URL</label>
-                <input type="text" id="image-link" name="image-link" class="form-control" placeholder="">
-            </div>
-            <div class="form-group">
-                <p><b>Choose Cat Personality Type</b></p>
-                <input type="radio" name="personality_type" value="active"> Active<br>
-                <input type="radio" name="personality_type" value="chill"> Chill<br>
-                <input type="radio" name="personality_type" value="zoomies"> Zoomies<br>
-            </div>
-            <div class="form-group">
-                <label for="description">Description</label>
-                <textarea id="description" name="description" class="form-control" type="text"></textarea>
-            </div>
-            <input type="submit" class="btn btn-block btn-primary">
-        </form>
+        <section class="add-cat-section">
+            <h5>Add A Cat</h5>
+            <form action="/ads/create" method="post">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input id="title" name="title" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="image-link">Image URL</label>
+                    <input type="text" id="image-link" name="image-link" class="form-control" placeholder="">
+                </div>
+                <div class="form-group">
+                    <select name="personality_type" id="cat-personality">
+                        <option value="active"> Active</option>
+                        <option value="chill"> Chill</option>
+                        <option value="zoomies"> Zoomies</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" class="form-control" type="text"></textarea>
+                </div>
+                <input type="submit" class="btn btn-block btn-primary">
+            </form>
+        </section>
     </div>
 </body>
 </html>
