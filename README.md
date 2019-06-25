@@ -1,7 +1,5 @@
 # CATalist
-<p align="center">
 ![CATalist Logo](src/main/webapp/img/logo-nobg.png)
-</p>
 
 We use science to find your perfect match!
 
