@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/cards.css">
-
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
+
+
+<c:if test="${user.id == 40}">
+
 <section class="admin-dashboard">
     <div class="container">
         <h5>User logged in: ${user.username}</h5>
@@ -122,6 +125,7 @@
                     <input type="submit" class="btn btn-block btn-primary">
                 </form>
             </section>
+            </c:if>
         </div>
     </div>
 </div>

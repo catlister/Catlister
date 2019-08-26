@@ -32,6 +32,7 @@ public class UpdateProfileServlet extends HttpServlet {
 //        request.getSession().invalidate();
 //        request.getRequestDispatcher("/login").forward(request, response);
 
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

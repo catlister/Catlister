@@ -11,16 +11,17 @@
         </ul>
         </c:if>
 
-        <c:if test="${user.username != null}">
+        <c:if test="${user.id != null}">
         <ul id = "logged-in-user" class="nav navbar-sav navbar-right logged-in-user">
             <!-- logged in USER nav bar -->
+            <c:if test="${user.id == 40}">
+                <li ><a href = "/dashboard" > Dashboard </a ></li >
+            </c:if>
             <li><a href="/">Home</a></li>
             <li><a href="/ads">Adopt</a></li>
             <li><a href="/profile">Profile</a></li>
             <li class="cat_nav_right"><a href="/logout">Logout</a></li>
         </ul>
         </c:if>
-
-    </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+    </div>
 </nav>

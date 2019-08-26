@@ -16,12 +16,15 @@ import java.io.IOException;
 public class AdsDeleteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Object loggedIn = req.getSession().getAttribute("user");
+        Object loggedIn = req.getSession().getAttribute("username");
+        String name = req.getParameter("username");
+        System.out.println(name);
 
-        if (loggedIn == null) {
-            resp.sendRedirect("/login");
+        if (loggedIn != null ) {
+            resp.sendRedirect("/dashboard");
             return;
         }
+
         req.setAttribute("ads", DaoFactory.getAdsDao().all());
         req.setAttribute("users", DaoFactory.getUsersDao().allUsers());
         req.getRequestDispatcher("/WEB-INF/users/dashboard.jsp").forward(req, resp);
